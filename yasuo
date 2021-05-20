@@ -1,0 +1,34 @@
+package yasuo
+
+abstract class skill {
+    abstract val name: String
+    abstract var blood: Int
+    abstract var armor: Int
+    abstract var magical: Int
+    fun Q(){
+        println("Đạo của Lãng Khách")
+    }
+    fun W(){
+        println("Tường Gió")
+    }
+    fun E(){
+        println("Quét Kiếm")
+    }
+    fun R(){
+        println("Trăn Trối")
+    }
+}
+class yasuo() :skill(){
+    override val name = "Yasuo"
+    override var blood = 610 //+87 mỗi cấp
+    override var armor = 33 //+3.4 mỗi cấp
+    override var magical = 31 //+1.25 mỗi cấp
+}
+fun main(){
+    //combo yasuo chuan vn
+    yasuo().W()
+    yasuo().R()
+    yasuo().E()
+    yasuo().Q()
+   
+}
