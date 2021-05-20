@@ -1,0 +1,21 @@
+package halo
+
+data class yasuo(var blood : Int
+                 var heal: Int
+                 var damage: Int
+                 var armor: Int
+                 var speed: Int
+                 var resistance: Int){
+}
+enum class skills{
+    var Q : String
+    var W : String
+    var E : String
+    var R : String
+}
+
+fun main(args: Array<String>){
+    var yasuo = yasuo(blood = 610, damage = 66.2, speed = 345, heal = 7.4, armor = 33.4, resistance = 31.25)
+    println(yasuo.toString())
+    println("$R la Trăn Trối")
+}
